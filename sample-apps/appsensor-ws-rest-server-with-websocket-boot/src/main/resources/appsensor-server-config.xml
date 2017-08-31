@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <appsensor-server-config xmlns="https://www.owasp.org/index.php/OWASP_AppSensor_Project/xsd/appsensor_server_config_2.0.xsd">
-	
+
 	<client-application-identification-header-name>X-Appsensor-Client-Application-Name2</client-application-identification-header-name>
-	
+
 	<geolocation enabled="true" databasePath="src/main/resources/GeoLite2-City.mmdb" />
-	
+
 	<client-applications>
 		<client-application>
 			<name>myclientapp</name>
@@ -12,7 +12,7 @@
 				<role>ADD_EVENT</role>
 				<role>ADD_ATTACK</role>
 				<role>GET_RESPONSES</role>
-				<role>EXECUTE_REPORT</role>	
+				<role>EXECUTE_REPORT</role>
 			</roles>
 		</client-application>
 		<client-application>
@@ -21,7 +21,7 @@
 				<role>ADD_EVENT</role>
 				<role>ADD_ATTACK</role>
 				<role>GET_RESPONSES</role>
-				<role>EXECUTE_REPORT</role>	
+				<role>EXECUTE_REPORT</role>
 			</roles>
 			<!-- ireland -->
 			<ip-address latitude="52.629678" longitude="-7.873585">10.10.10.5</ip-address>
@@ -32,7 +32,7 @@
 				<role>ADD_EVENT</role>
 				<role>ADD_ATTACK</role>
 				<role>GET_RESPONSES</role>
-				<role>EXECUTE_REPORT</role>	
+				<role>EXECUTE_REPORT</role>
 			</roles>
 			<!-- brazil -->
 			<ip-address latitude="-7.471493" longitude="-47.248578">10.10.10.6</ip-address>
@@ -43,7 +43,7 @@
 				<role>ADD_EVENT</role>
 				<role>ADD_ATTACK</role>
 				<role>GET_RESPONSES</role>
-				<role>EXECUTE_REPORT</role>	
+				<role>EXECUTE_REPORT</role>
 			</roles>
 			<!-- russia -->
 			<ip-address latitude="59.164625" longitude="123.96234">10.10.10.7</ip-address>
@@ -54,7 +54,7 @@
 				<role>ADD_EVENT</role>
 				<role>ADD_ATTACK</role>
 				<role>GET_RESPONSES</role>
-				<role>EXECUTE_REPORT</role>	
+				<role>EXECUTE_REPORT</role>
 			</roles>
 			<!-- india -->
 			<ip-address latitude="12.875989" longitude="77.556100">10.10.10.8</ip-address>
@@ -129,7 +129,7 @@
 			</responses>
 		</detection-point>
 		<detection-point>
-			<category>Request</category>
+			<category>Request Exception</category>
 			<id>RE3</id>
 			<threshold>
 				<count>7</count>
@@ -152,7 +152,7 @@
 			</responses>
 		</detection-point>
 		<detection-point>
-			<category>Authentication</category>
+			<category>Authentication Exception</category>
 			<id>AE4</id>
 			<threshold>
 				<count>8</count>
@@ -175,6 +175,60 @@
 				<response>
 					<action>disableComponentForAllUsers</action>
 					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Request Exception</category>
+			<id>RE5</id>
+			<threshold>
+				<count>1</count>
+				<interval unit="seconds">40</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">33</interval>
+				</response>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">33</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Request Exception</category>
+			<id>RE6</id>
+			<threshold>
+				<count>1</count>
+				<interval unit="seconds">40</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">33</interval>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">33</interval>
 				</response>
 			</responses>
 		</detection-point>
