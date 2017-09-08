@@ -130,7 +130,145 @@
 		</detection-point>
 		<detection-point>
 			<category>Request Exception</category>
+			<id>RE1</id>
+			<threshold>
+				<count>7</count>
+				<interval unit="seconds">40</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">33</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Request Exception</category>
+			<id>RE2</id>
+			<threshold>
+				<count>7</count>
+				<interval unit="seconds">40</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">33</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Request Exception</category>
 			<id>RE3</id>
+			<threshold>
+				<count>7</count>
+				<interval unit="seconds">40</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">33</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Request Exception</category>
+			<id>RE5</id>
+			<threshold>
+				<count>7</count>
+				<interval unit="seconds">40</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">33</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Request Exception</category>
+			<id>RE6</id>
+			<threshold>
+				<count>7</count>
+				<interval unit="seconds">40</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">33</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Request Exception</category>
+			<id>RE7</id>
+			<threshold>
+				<count>7</count>
+				<interval unit="seconds">40</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">33</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Request Exception</category>
+			<id>RE8</id>
 			<threshold>
 				<count>7</count>
 				<interval unit="seconds">40</interval>
