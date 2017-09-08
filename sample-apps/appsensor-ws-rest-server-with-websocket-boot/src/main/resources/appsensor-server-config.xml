@@ -640,6 +640,168 @@
 				</response>
 			</responses>
 		</detection-point>
+		<detection-point>
+			<category>Session Exception</category>
+			<id>SE1</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Session Exception</category>
+			<id>SE2</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Session Exception</category>
+			<id>SE3</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Session Exception</category>
+			<id>SE4</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Session Exception</category>
+			<id>SE5</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Session Exception</category>
+			<id>SE6</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
 	</detection-points>
 
 </appsensor-server-config>
