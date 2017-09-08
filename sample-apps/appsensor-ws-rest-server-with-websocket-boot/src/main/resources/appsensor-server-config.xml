@@ -94,23 +94,6 @@
 		</detection-point>
 		<detection-point>
 			<category>Input Validation</category>
-			<id>IE1</id>
-			<threshold>
-				<count>30</count>
-				<interval unit="minutes">1</interval>
-			</threshold>
-			<responses>
-				<response>
-					<action>disable</action>
-					<interval unit="minutes">10</interval>
-				</response>
-				<response>
-					<action>logout</action>
-				</response>
-			</responses>
-		</detection-point>
-		<detection-point>
-			<category>Input Validation</category>
 			<id>IE2</id>
 			<threshold>
 				<count>6</count>
@@ -125,6 +108,23 @@
 				</response>
 				<response>
 					<action>disableUser</action>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Input Validation</category>
+			<id>IE3</id>
+			<threshold>
+				<count>30</count>
+				<interval unit="minutes">1</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>disable</action>
+					<interval unit="minutes">10</interval>
+				</response>
+				<response>
+					<action>logout</action>
 				</response>
 			</responses>
 		</detection-point>
@@ -291,6 +291,87 @@
 		</detection-point>
 		<detection-point>
 			<category>Authentication Exception</category>
+			<id>AE1</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Authentication Exception</category>
+			<id>AE2</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Authentication Exception</category>
+			<id>AE3</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Authentication Exception</category>
 			<id>AE4</id>
 			<threshold>
 				<count>8</count>
@@ -317,17 +398,13 @@
 			</responses>
 		</detection-point>
 		<detection-point>
-			<category>Request Exception</category>
-			<id>RE5</id>
+			<category>Authentication Exception</category>
+			<id>AE5</id>
 			<threshold>
-				<count>1</count>
-				<interval unit="seconds">40</interval>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
 			</threshold>
 			<responses>
-				<response>
-					<action>disableComponentForSpecificUser</action>
-					<interval unit="minutes">33</interval>
-				</response>
 				<response>
 					<action>log</action>
 				</response>
@@ -339,16 +416,20 @@
 				</response>
 				<response>
 					<action>disableComponentForSpecificUser</action>
-					<interval unit="minutes">33</interval>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
 				</response>
 			</responses>
 		</detection-point>
 		<detection-point>
-			<category>Request Exception</category>
-			<id>RE6</id>
+			<category>Authentication Exception</category>
+			<id>AE6</id>
 			<threshold>
-				<count>1</count>
-				<interval unit="seconds">40</interval>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
 			</threshold>
 			<responses>
 				<response>
@@ -362,11 +443,200 @@
 				</response>
 				<response>
 					<action>disableComponentForSpecificUser</action>
-					<interval unit="minutes">33</interval>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Authentication Exception</category>
+			<id>AE7</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
 				</response>
 				<response>
 					<action>disableComponentForSpecificUser</action>
-					<interval unit="minutes">33</interval>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Authentication Exception</category>
+			<id>AE8</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Authentication Exception</category>
+			<id>AE9</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Authentication Exception</category>
+			<id>AE10</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Authentication Exception</category>
+			<id>AE11</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Authentication Exception</category>
+			<id>AE12</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
+				</response>
+			</responses>
+		</detection-point>
+		<detection-point>
+			<category>Authentication Exception</category>
+			<id>AE13</id>
+			<threshold>
+				<count>8</count>
+				<interval unit="seconds">50</interval>
+			</threshold>
+			<responses>
+				<response>
+					<action>log</action>
+				</response>
+				<response>
+					<action>logout</action>
+				</response>
+				<response>
+					<action>disableUser</action>
+				</response>
+				<response>
+					<action>disableComponentForSpecificUser</action>
+					<interval unit="minutes">34</interval>
+				</response>
+				<response>
+					<action>disableComponentForAllUsers</action>
+					<interval unit="minutes">14</interval>
 				</response>
 			</responses>
 		</detection-point>
