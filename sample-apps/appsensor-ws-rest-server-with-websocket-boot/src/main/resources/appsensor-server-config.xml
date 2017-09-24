@@ -84,7 +84,11 @@
 			</threshold>
 			<responses>
 				<response>
-					<action>log</action>
+					<action>disable</action>
+					<interval unit="minutes">10</interval>
+				</response>
+				<response>
+					<action>disableUser</action>
 					<interval unit="minutes">10</interval>
 				</response>
 				<response>
@@ -101,13 +105,14 @@
 			</threshold>
 			<responses>
 				<response>
-					<action>log</action>
-				</response>
-				<response>
 					<action>logout</action>
 				</response>
 				<response>
 					<action>disableUser</action>
+					<interval unit="minutes">10</interval>
+				</response>
+				<response>
+					<action>log</action>
 				</response>
 			</responses>
 		</detection-point>
@@ -120,11 +125,11 @@
 			</threshold>
 			<responses>
 				<response>
-					<action>disable</action>
-					<interval unit="minutes">10</interval>
+					<action>logout</action>
 				</response>
 				<response>
-					<action>logout</action>
+					<action>disable</action>
+					<interval unit="minutes">10</interval>
 				</response>
 			</responses>
 		</detection-point>
@@ -137,17 +142,14 @@
 			</threshold>
 			<responses>
 				<response>
-					<action>log</action>
-				</response>
-				<response>
 					<action>logout</action>
-				</response>
-				<response>
-					<action>disableUser</action>
 				</response>
 				<response>
 					<action>disableComponentForSpecificUser</action>
 					<interval unit="minutes">33</interval>
+				</response>
+				<response>
+					<action>disableUser</action>
 				</response>
 			</responses>
 		</detection-point>
@@ -160,17 +162,14 @@
 			</threshold>
 			<responses>
 				<response>
-					<action>log</action>
-				</response>
-				<response>
 					<action>logout</action>
-				</response>
-				<response>
-					<action>disableUser</action>
 				</response>
 				<response>
 					<action>disableComponentForSpecificUser</action>
 					<interval unit="minutes">33</interval>
+				</response>
+				<response>
+					<action>disableUser</action>
 				</response>
 			</responses>
 		</detection-point>
@@ -183,17 +182,14 @@
 			</threshold>
 			<responses>
 				<response>
-					<action>log</action>
-				</response>
-				<response>
 					<action>logout</action>
-				</response>
-				<response>
-					<action>disableUser</action>
 				</response>
 				<response>
 					<action>disableComponentForSpecificUser</action>
 					<interval unit="minutes">33</interval>
+				</response>
+				<response>
+					<action>disableUser</action>
 				</response>
 			</responses>
 		</detection-point>
@@ -206,17 +202,14 @@
 			</threshold>
 			<responses>
 				<response>
-					<action>log</action>
-				</response>
-				<response>
 					<action>logout</action>
-				</response>
-				<response>
-					<action>disableUser</action>
 				</response>
 				<response>
 					<action>disableComponentForSpecificUser</action>
 					<interval unit="minutes">33</interval>
+				</response>
+				<response>
+					<action>disableUser</action>
 				</response>
 			</responses>
 		</detection-point>
@@ -229,17 +222,14 @@
 			</threshold>
 			<responses>
 				<response>
-					<action>log</action>
-				</response>
-				<response>
 					<action>logout</action>
-				</response>
-				<response>
-					<action>disableUser</action>
 				</response>
 				<response>
 					<action>disableComponentForSpecificUser</action>
 					<interval unit="minutes">33</interval>
+				</response>
+				<response>
+					<action>disableUser</action>
 				</response>
 			</responses>
 		</detection-point>
@@ -252,17 +242,14 @@
 			</threshold>
 			<responses>
 				<response>
-					<action>log</action>
-				</response>
-				<response>
 					<action>logout</action>
-				</response>
-				<response>
-					<action>disableUser</action>
 				</response>
 				<response>
 					<action>disableComponentForSpecificUser</action>
 					<interval unit="minutes">33</interval>
+				</response>
+				<response>
+					<action>disableUser</action>
 				</response>
 			</responses>
 		</detection-point>
@@ -275,17 +262,14 @@
 			</threshold>
 			<responses>
 				<response>
-					<action>log</action>
-				</response>
-				<response>
 					<action>logout</action>
-				</response>
-				<response>
-					<action>disableUser</action>
 				</response>
 				<response>
 					<action>disableComponentForSpecificUser</action>
 					<interval unit="minutes">33</interval>
+				</response>
+				<response>
+					<action>disableUser</action>
 				</response>
 			</responses>
 		</detection-point>
